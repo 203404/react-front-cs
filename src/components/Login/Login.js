@@ -14,7 +14,6 @@ function App() {
         headers: { "Content-Type": "application/json" },
       })
       .then((response) => {
-        // alert('login, id: ' + response.data.id_user)
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("id_user", response.data.id_user);
         window.location = "/profile";
